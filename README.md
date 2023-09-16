@@ -4,6 +4,8 @@
 
 Alternate name: Brain Root
 
+**NOTE TO SELF**: Pace yourself, step by step, no rush. 
+
 In "Outbreak Orchestrator," players embark on a unique journey through the microscopic world, harnessing the power of fungi, parasites, and plants to manipulate and control a vast ecosystem. Starting with simple fungal spores, players evolve their abilities, collecting various biological materials like Rodent Remnants, Feather Fragments, and Insect Integuments. As they progress, they delve deeper into the world of mind-controlling organisms, unlocking the potential to influence larger creatures and even human behavior.
 
 The game blends elements of strategy and clicker mechanics, requiring players to invest time in research, boost their knowledge levels, and automate collections. Through their endeavors, players can influence and take over pharmaceutical companies, animal organizations, and even world governments, all while balancing the need to appease these entities. Monetization plays a role as players use funds for storage, equipment, influence, and keeping their operations covert.
