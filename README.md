@@ -1,5 +1,7 @@
 # Outbreak Orchestrator
 
+![](img/cover.png)
+
 Alternate name: Brain Root
 
 In "Outbreak Orchestrator," players embark on a unique journey through the microscopic world, harnessing the power of fungi, parasites, and plants to manipulate and control a vast ecosystem. Starting with simple fungal spores, players evolve their abilities, collecting various biological materials like Rodent Remnants, Feather Fragments, and Insect Integuments. As they progress, they delve deeper into the world of mind-controlling organisms, unlocking the potential to influence larger creatures and even human behavior.
@@ -94,7 +96,7 @@ mushroom opened up
 - A increase/decreaste button to adjust % of fungi army, parasite army, plant army, another for exploration rate, infection rate, worker production, collector production etc. 
 
 
-Things to add:
+## Things to add:
 
 - Virus creator 
 MONEY 
@@ -105,7 +107,7 @@ MONEY
 - money for other things. 
 - so the itmes above needs to be monopolised some how 
 
-Achivements & Progression mechanism example
+## Achivements & Progression mechanism example
 
 - Add new collectable thing i.e. fungal fragment
 - Collection automator
@@ -116,7 +118,21 @@ Achivements & Progression mechanism example
 - Take over: All those above
 - Appease: all those above (maybe first stage)
 
+## Future
 
+- COOPT UNI STUDENTS
+	- PROPAGANDA: "INCREASE FUNGAL RIGHTS"
+	- THEN CONSUME THEM 
+	- PSYOPS IT
+- WORLD BATTLE MAP
+	- Take France, Take Belgium, Take Vietnam
+- ALLIANCES
+	- LEAVE SMALL GROUPS OF HUMANS ALONE
+- SYMBIOSIS
+	- TREAT CERTAIN GROUPS AS NEUTRAL
+- HUMANS PUSH BACK
+	- They create vaccines
+	- you need to unlock counters
 
 
 What's missing:
@@ -310,4 +326,8 @@ Your game has the potential for complexity, intrigue, and a lot of strategic dep
 - Hentai influencer
 
 - Drone Commander [crawlers, flyers...space]
+
+# ADVERTISING
+
+- A new intelligence will emerge
 
