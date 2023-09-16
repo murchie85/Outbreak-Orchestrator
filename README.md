@@ -2,36 +2,31 @@
 
 ![](img/cover.png)
 
-Alternate name: Brain Root
+In "Outbreak Orchestrator," players navigate a microscopic world, using fungi, parasites, and plants to control an ecosystem. From starting with fungal spores to manipulating larger creatures and human behavior, players enhance their abilities by collecting biological materials and delving into the realm of mind-controlling organisms. The gameplay combines strategy and clicker elements, allowing players to research, automate collections, and even influence global organizations, all while managing monetization aspects. Success is marked by system automation, innovations in mind control, and expanding one's domain, aiming to orchestrate a grand biological outbreak that decides the destiny of species and civilizations.
 
-**NOTE TO SELF**: Pace yourself, step by step, no rush. 
 
-In "Outbreak Orchestrator," players embark on a unique journey through the microscopic world, harnessing the power of fungi, parasites, and plants to manipulate and control a vast ecosystem. Starting with simple fungal spores, players evolve their abilities, collecting various biological materials like Rodent Remnants, Feather Fragments, and Insect Integuments. As they progress, they delve deeper into the world of mind-controlling organisms, unlocking the potential to influence larger creatures and even human behavior.
 
-The game blends elements of strategy and clicker mechanics, requiring players to invest time in research, boost their knowledge levels, and automate collections. Through their endeavors, players can influence and take over pharmaceutical companies, animal organizations, and even world governments, all while balancing the need to appease these entities. Monetization plays a role as players use funds for storage, equipment, influence, and keeping their operations covert.
 
-Achievement is marked by unlocking new collectables, automating systems, inventing mind-controlling mechanisms, upgrading research capabilities, and expanding their influence from Earth to the universe. The overarching goal is not just to observe but to orchestrate a grand biological outbreak, determining the fate of entire species and civilizations.
+
 
 
 # REQUIREMENT  
 
 - I want a game like Universal Paperclips
 - Should be easy to build, html and javascript
+- Alternate name: Brain Root
+- **NOTE TO SELF**: Pace yourself, step by step, no rush. 
+- **Remember**, the key to a successful clicker game is the **sense of progression**, so ensuring players feel rewarded and can upgrade or evolve their fungi will be essential!
 
-**Remember**, the key to a successful clicker game is the **sense of progression**, so ensuring players feel rewarded and can upgrade or evolve their fungi will be essential!
-
-https://i.pinimg.com/originals/c3/3d/49/c33d49e97f97a5100ad82624da9ce847.jpg
-
-
-https://lofi-gaming.org.uk/wp-content/uploads/2017/11/paperclips-1.png
-
-
-https://assetsio.reedpopcdn.com/universal.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp
 
 
 # JOBS
 
 Fully draw out all the boxes for shrooms, parasites, plants and viruses
+
+## NOTES
+
+Add in plot, you need to collect high volumes to deeply understand them.
 
 
 # CHOSEN THEME 
@@ -40,6 +35,7 @@ Fully draw out all the boxes for shrooms, parasites, plants and viruses
 
 	- COLLECT insects and PARASITES:   MUSHROOMS:  PLANTS:  VIRUSES
 	- SELL, TRADE, DISPOSE
+	- AMOUNT TO STUDY THRESHOLD MET
 	- INVEST STUDY TIME: Assign % research time 
     - INFLUENCE ANIMALS/BEINGS: mutant controlling shroom/parasite/mechanism
     - Animal species automated to do your bidding
@@ -49,27 +45,55 @@ Fully draw out all the boxes for shrooms, parasites, plants and viruses
 	- repeat
 
 
-## Unlockables
-
-- New Collectable Item
-- Automate collection
-- Collection Rate
-- Study Allocation efficiency level up
-- Research level Up
-- Stealth Level UP  
-
-- Appease/influence/Take over:
-	- Big pharma
-	- Animals organisations
-	- Stock Market
-	- Governments
-	- Alien civilizations
-
-
-
-# Sequence of Events
+# FULL DESIGN
 
 1. Game Intro: story about your job
+
+
+Sequence of Events
+
+PHASE 1: Dabbling with Biology
+
+1. Collect Insect remnants (various ants)
+2. Study threshold met at 100 clicks - you can now research your collected matter. 
+Choose % of effort to study this matter. 
+3. Research Initial investigation unlocked. This fills up like a bar. 
+4. CONSUMPTION: Collected matter ticks down from losses due to being discarded after study.
+5. Research deep insight unlocked - This fills up like a bar. Upgrade=everyclick multiplied by 2
+6. Research zombify unlocked This fills up like a bar
+7. Zombie Ants unlocked! Automate CORPSE harvesting/collection once research complete - press to automate. 
+8. Collected matter ticks down from losses due to decomposition
+9. You can begin selling matter to people and Universities
+10. Money to buy more research equipment (unlock them)
+12. Money can buy you better storage options (increasing your max)
+11. Equipment unlocks new abilities to study (i.e. increased automation efficiency, reduce decomposition loss, new abilities - they can collect resources for you etc.)
+
+FINALLY Once a certain threshold met, you unlock the ability to collect a different biological resource i.e. next one is rodant remnance. This moves to Phase 2
+
+UNLOCKS FOR PHASE 1
+
+- Automation
+- Improved Automation 
+- Collection multiplier
+- New Buyers: First you can only sell to weirdoes, then drug addicts, then University students, then universities, then Big Pharma and so on. For Phase one, only will be Weirdoes.  
+- Once Phase 2 is unlocked, you can maybe trade or convert your Insect remnants for rodant remnants at a price/rate of 0.25 to 1 ..still thinking aabout this. 
+
+
+
+
+
+
+
+
+
+
+PHASE: MUTANT ARMY
+
+- Decrease & Increase button Like von neuman drone design
+- Explore, speed, Infection rate, Mutation Rate, Matter gathering.
+- Collonise towns, cities, countries... 
+- NEWS UPDATE: The Mutant Horde has taken Greece (+10000 domination)
+
 2. A single button you tap to collect your first fungal item or insect item
 3. Sell what you can to low tier buyers
 4. ....
@@ -82,20 +106,15 @@ Fully draw out all the boxes for shrooms, parasites, plants and viruses
 - A certain threshold of collected items + research level opens up more parasite/insect material to collect which expands available things to control and influence
 - eventually could have 5 to 10 different kinds of clicker boxes for the different collectables
 
-mushroom opened up 
+- MUSHROOM, PLANT, VIRUS REPEAT
 
-- collect mushroom stuff
-- invest time to study them 
-- unlocks ability to control animals things to automate collecting faster: research level ++
-- A certain threshold of collected items + research level opens up more mushroom/fungi stuff to collect
-
-- Possibly later expand to plants with the same mechanisms as above.
 - at this point, the player has three different types, collecting multiple items within that type.  the cheaper, less valuable stuff gets automated more quickly so that feels like an achievement when you see those coming in and being collected.
 - Eventually this builds up to taking over pharamaceutical companies, animal companies, then the market  then the world, then the unvierse!
 
 - Advanced clicker tasks
 - Mutant army Designer
 - A increase/decreaste button to adjust % of fungi army, parasite army, plant army, another for exploration rate, infection rate, worker production, collector production etc. 
+
 
 
 ## Things to add:
@@ -109,6 +128,27 @@ MONEY
 - money for other things. 
 - so the itmes above needs to be monopolised some how 
 
+
+## FEATURES TO UNLOCK
+
+- New Collectable Matter
+- Automate collection
+- Collection Rate
+- Study Allocation efficiency level up
+- Research level Up
+- Stealth Level UP  
+
+- Appease/influence/Take over:
+	- Big pharma
+	- Animals organisations
+	- Stock Market
+	- Governments
+	- Alien civilizations
+
+- Events
+	- FUNGUY! A new rockband to gain global support
+
+
 ## Achivements & Progression mechanism example
 
 - Add new collectable thing i.e. fungal fragment
@@ -121,6 +161,7 @@ MONEY
 - Appease: all those above (maybe first stage)
 
 ## Future
+
 
 - COOPT UNI STUDENTS
 	- PROPAGANDA: "INCREASE FUNGAL RIGHTS"
@@ -273,21 +314,7 @@ What's missing:
 
 
 
-# Sample Mechanism from universal paperclips 
 
-- + manual button
-- +- price 
-- 'market level'
-- wire 
-- Auto clippers
-- Marketing + 
-
-INFO 
-
-- Funds
-- Unsold inventory
-- price per clip
-- public demand
 
 
 
@@ -366,3 +393,45 @@ Your game has the potential for complexity, intrigue, and a lot of strategic dep
 
 - A new intelligence will emerge
 
+
+
+# EXAMPLES FROM UNIVERSAL PAPERCLIPS
+
+![](https://i.pinimg.com/originals/c3/3d/49/c33d49e97f97a5100ad82624da9ce847.jpg)
+
+
+![](https://lofi-gaming.org.uk/wp-content/uploads/2017/11/paperclips-1.png)
+
+![](https://assetsio.reedpopcdn.com/universal.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp)
+
+## Sample Mechanism from universal paperclips 
+
+- Collection button
+- + - price 
+- Buy wire 
+- Auto clippers
+
+- Upgrade: 'market level'
+- Upgrade: Auto buy wire
+
+- Unlock, cheaper wire
+- more wire
+- faster auto clipper
+
+INFO  Display
+
+- Funds
+- Unsold inventory
+- price per clip
+- marketing
+- public demand
+
+
+
+# FULL SYNOPSIS 
+
+In "Outbreak Orchestrator," players embark on a unique journey through the microscopic world, harnessing the power of fungi, parasites, and plants to manipulate and control a vast ecosystem. Starting with simple fungal spores, players evolve their abilities, collecting various biological materials like Rodent Remnants, Feather Fragments, and Insect Integuments. As they progress, they delve deeper into the world of mind-controlling organisms, unlocking the potential to influence larger creatures and even human behavior.
+
+The game blends elements of strategy and clicker mechanics, requiring players to invest time in research, boost their knowledge levels, and automate collections. Through their endeavors, players can influence and take over pharmaceutical companies, animal organizations, and even world governments, all while balancing the need to appease these entities. Monetization plays a role as players use funds for storage, equipment, influence, and keeping their operations covert.
+
+Achievement is marked by unlocking new collectables, automating systems, inventing mind-controlling mechanisms, upgrading research capabilities, and expanding their influence from Earth to the universe. The overarching goal is not just to observe but to orchestrate a grand biological outbreak, determining the fate of entire species and civilizations.
