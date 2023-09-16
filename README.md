@@ -224,7 +224,40 @@ What's missing:
    
 
 
+**1. Micro-Control Parasites**:
+   - **Rodent Remnants**: Tiny fragments of controlled rodents that can be harvested for power-ups or game currency.
+   - **Feather Fragments**: Infected plumes that may unlock avian parasite upgrades.
+   - **Insect Integuments**: Shed exoskeletons from controlled insects that can be used in various crafting recipes.
 
+**2. Emotion Manipulation Parasites**:
+   - **Mood Molecules**: Harvested from MoodMite hosts, used to craft emotional influence tools.
+   - **Tears of Despair**: Collected from hosts influenced by SorrowSpore, possibly a rare ingredient for crafting.
+   - **Happiness Hormones**: Extracted from JoyJelly's hosts, can be consumed for a temporary power-up or boost.
+
+**3. Decision Making Parasites**:
+   - **Neural Nodules**: Extracted from hosts to enhance your parasites' decision influencing capabilities.
+   - **Will Whispers**: Ethereal remnants of major life decisions, can be used for advanced crafting.
+   - **Impulse Ink**: Liquid extracted from ImpulseImp-controlled hosts, might be used to draft certain tools or weapons.
+
+**4. Physical Control Parasites**:
+   - **Locomotion Ligaments**: Harvested from hosts controlled by LocoLarva, perhaps used to enhance speed or movement.
+   - **Gesture Gel**: Extracted from hosts, provides bonuses when influencing motor skills.
+   - **Spinal Shards**: Rare fragments that can enhance a parasite's physical control abilities.
+
+**5. Cognitive Parasites**:
+   - **Memory Morsels**: Bits of consumed memories that can be used for various game enhancements.
+   - **Thought Threads**: Harvested from hosts influenced by ThoughtThrip, might help in crafting or evolving your parasites.
+   - **Dream Drops**: Liquid essences from dreams, potentially a rare and powerful item.
+
+**6. Zombification Parasites**:
+   - **Zombie Zest**: A common resource harvested from zombie hosts.
+   - **Necrotic Nectar**: A rare extract from hosts, provides enhancements to zombification abilities.
+   - **Decay Dust**: Ground-up residue from decayed hosts, used in a variety of crafting recipes.
+
+**7. Stealth Parasites**:
+   - **Silent Scales**: Collected from hosts, helps in crafting stealth-related items.
+   - **Camouflage Crystals**: Enhances the parasite's ability to blend and hide within hosts.
+   
 
 
 

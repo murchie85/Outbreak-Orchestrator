@@ -1,0 +1,48 @@
+/* Resets for default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(53, 55, 63);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.outerBox {
+    border: 3px solid rgb(77, 182, 255);
+    margin-top:  3%;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow */
+}
+
+.box {
+    border: 2px solid white;
+    background-color: rgb(63, 66, 75);
+    padding: 20px;
+    text-align: center;
+    width: 90%; /* Adjusted width */
+    margin: 0 auto; /* This centers the box within the outerBox */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(77, 182, 255); /* Neon Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px; /* Spacing between the number and the button */
+}
