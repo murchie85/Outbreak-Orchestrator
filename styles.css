@@ -42,7 +42,14 @@ button {
     padding: 10px 20px;
     background-color: rgb(77, 182, 255); /* Neon Blue */
     color: white;
-    border: none;
+    border: 2px solid rgb(77, 182, 255);  /* Add this border so the transition looks smooth */
+    transition: border-color 0.50;  /* 1/6th of a second */
     cursor: pointer;
     margin-top: 20px; /* Spacing between the number and the button */
 }
+
+/* ... (rest of your styles) ... */
+button.pressed {
+    border-color: white;
+}
+
