@@ -5,23 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVP Demo</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <h1>Organic Matter: <span id="organicMatter">0</span></h1>
 
 
+    <div class="box">
+        <h2 id="currentMatterName"></h2>
+        <p id="currentMatterCount">0</p>
 
-
-    <div class="outerBox">
-        <div class="box">
-            <h2>Rodent Remnants</h2>
-            <p id="rodentCount">0</p>
-            <button id="collectBtn">Collect</button>
+        <div id="studiedContainer">
+            Studied: <progress value="0" max="100" id="studiedProgress"></progress>
         </div>
-        <!-- Additional boxes can be added here -->
+        <div id="rpContainer">
+            RP: <span id="currentRP">0</span>
+        </div>
+        <div id="focusContainer">
+            Focus: <input type="range" id="focusSlider" min="0" max="100" value="0">
+        </div>
+        <div id="demandContainer">
+            Demand: <span id="currentDemandAmt">0</span>
+        </div>
+        <div id="disposeContainer">
+            <button>Dispose</button> <span id="currentWasteAmt">0</span>
+        </div>
+        <div id="studyContainer">
+            <button>Study</button>
+        </div>
+        <div id="sellContainer">
+            <button>Sell</button> <span id="currentSoldAmt">0</span>
+        </div>
+
+
+        <button id="collectBtn">Collect</button>
     </div>
 
+    <button id="resetBtn">Reset</button>
 
+    <script src="visuals.js"></script>
     <script src="scripts.js"></script>
+
+
 </body>
 </html>
+

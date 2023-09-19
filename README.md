@@ -39,11 +39,14 @@ Fully draw out all the boxes for shrooms, parasites, plants and viruses
   - Matter degrades after study and over time.
 - **Automation**: 
   - Unlock 'Zombie Ants' -> Automate collection.
+- **Harvest Resources**: 
+	- Ants can harvest simple matter
+	- Birds can harvest more complex matter ...
 - **Economy**:
-  - Start selling to individuals and institutes.
+  - Start selling dead ants to individuals and institutes.
   - Price influenced by supply & demand.
   - Use money for equipment and storage upgrades.
-  - Invest in demand-boosting unlockables with RPs.
+  - Invest in demand-boosting unlockables with RPs.   
 - **Refinement**: 
   - Convert remnants to refined products (e.g., powder).
 - **Transition**: Meet RP & collection goals -> Unlock Phase 2: Rodent remnants.
@@ -77,56 +80,81 @@ Game Intro: story about your job
 **NOTIFY ONWARDS** IF Ants > 300: WARNING, DECOMPOSITION MECHANISM, ANTS = --%ANTS
 
 
-## RP unlocked at 50 ants
+## UNLOCK RP (50 RP)
 
 - UNLOCK BOX: 'Research'.
 - RP score revealed
 - Study Button Revealed
 - Notify "Have a play"
-**Notify** - "Collected matter ticks down from losses due to being discarded after study."
 
 `CONSUMPTION MECHANISM`: Research button = ++RP , -- Ant Remnants
 
-## First RP objective at 50 RP
 
-- UNLOCK BOX: 'Reasearch Lv 1: Initial investigation'.
+## DECOMPOSITION (100 ANTS)
+
+**Notify** - "Collected matter ticks down from losses due to being discarded after study."
+
+
+## First RP objective  (100RP)
+
+- UNLOCK BOX: 
+				'Reasearch Lv 1: Initial investigation'.
 - Studied Bar revealed
 - Focus bar revealed
 - Research LV 1 displayed
 **Notify** "you can now research your collected matter. "
 
-ON COMPLETION: Give some gift
+ON COMPLETION: 
+				Give some gift
 
+## LV 2 (200 RP)
 
-## Second RP objective at 200 RP
-
-- UNLOCK BOX: Click unlock box to research Lv 2 (efficiency message)
+- UNLOCK BOX: 
+				Click unlock box to research Lv 2 (efficiency message)
 - Research bar changes colour
 
-ON COMPLETION:  Ugrade=everyclick multiplied by 2, 
+ON COMPLETION:  Ugrade=everyclick multiplied by 2
+
+
+## LV 3 Mutator (400RP)
+
+- UNLOCK BOX: 
+				"Mutator - gain theoretical insights into mutating the ant brain after a high volume of research specimins have been gained",
+
 				convert % of decomposed matter into useful base organic material
 
-
-## Third RP objective at 400 RP
-
-- UNLOCK BOX: "Mutator - gain theoretical insights into mutating the ant brain after a high volume of research specimins have been gained"
 - Research bar changes colour
 
 ON COMPLETION: Gain some resources, chemicals from decomposed matter 
 
-## Fourth RP objective at 800 RP
+## LV4 RESEARCH ZOMBIFICATION (600RP)
 
-- UNLOCK BOX: Automation 
-- Click unlock button to reesearch Automation
-  "Research zombify unlocked This fills up like a bar"
+- UNLOCK BOX: 
+			 Zombify Automation ...research development on automating ants to do your bidding
+
+ON COMPLETION:
+	UNLOCK BOX: 
+  				Zombify my ants - ressurect corpses into your undead army. 
+
+  				Then you get zombie army box appear
+
+  				Ants = Mission = nothing
+
+## LV 5 HARVEST CORPSES
+- UNLOCK BOX: 
+				"Embew your undead army to collect corpses for you"
 
 
-- LV 4: 
 
 
-6. 
-7. Zombie Ants unlocked! Automate CORPSE harvesting/collection once research complete - press to automate. 
-8. Collected matter ticks down from losses due to decomposition
+EARLY BATTLE MAP: POSSIBLY YOUR ANTS, BATTLE OTHER ANTS, 
+
+DISPOSER AUTOMATER TICK DOWN
+
+ORGANIC MATTER CONVERTER TICK DOWN MATTER TICK UP ...
+KEEP SIMPLE...
+
+
 9. You can begin selling matter to people and Universities
 9.1. Supply and Demand impacts price 
 9.2. Unlockables you can buy with money, research points help increase demand. 
