@@ -95,7 +95,7 @@ Game Intro: story about your job
 **Notify** - "Collected matter ticks down from losses due to being discarded after study."
 
 
-## First RP objective  (100RP)
+## First RP objective  (50RP)
 
 - UNLOCK BOX: 
 				'Reasearch Lv 1: Initial investigation'.

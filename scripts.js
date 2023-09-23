@@ -5,16 +5,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -------DISPLAY VALUES 
 
-    let showStudied  = false;   
-    let showRP       = false;
-    let showFocus    = false;
-    let showDemand   = false;
-    let showDispose  = false;
-    let showStudy    = false;
-    let showSell     = false;
-    let showRPThresh = 20
+
+    let showStudy   = localStorage.getItem("showStudy") === "true";
+    let showRP      = localStorage.getItem("showRP") === "true";
+    let showStudied = localStorage.getItem("showStudied") === "true";
+    let showFocus   = localStorage.getItem("showFocus") === "true";
+    let showDemand  = localStorage.getItem("showDemand") === "true";
+    let showDispose = localStorage.getItem("showDispose") === "true";
+    let showSell    = localStorage.getItem("showSell") === "true";
+    let showRPThresh       = 20
+    let decomposeThreshold = 20
+    let currentRPThreshold = 100;
 
     updateVisuals(showStudied, showRP, showFocus, showDemand, showDispose, showStudy, showSell);
+
+
+    // STORAGE VALUES
+    
+    let totalMatter         = parseInt(localStorage.getItem("totalMatter") || 2123000);
+    let currentMatterCount  = parseInt(localStorage.getItem("currentMatterCount") || 0);
+    let currentRPcount      = parseInt(localStorage.getItem("currentRPcount") || 0);
+    let decomposition       = !!localStorage.getItem("decomposition");
+    let currentStudiedVal   = parseInt(localStorage.getItem("currentStudiedVal") || 0);
 
 
 
@@ -22,32 +34,108 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     const currentMatterNameEl  = document.getElementById("currentMatterName");
-    const organicMatterEl      = document.getElementById("organicMatter");
+    const totalMatterEl        = document.getElementById("totalMatter");
     const currentMatterCountEl = document.getElementById("currentMatterCount");
     const currentRPEl          = document.querySelector("#rpContainer #currentRP");
+    const studiedProgressEl    = document.querySelector("#studiedContainer #studiedProgress");
     
 
     // BUTTONS
     const collectBtn           = document.getElementById("collectBtn");
     const studyBtn             = document.querySelector("#studyContainer button");
+    const resetBtn             = document.getElementById("resetBtn");
 
 
 
-    // STORAGE VALUES
-    
-    let organicMatter       = parseInt(localStorage.getItem("organicMatter") || 2123000);
-    let currentMatterCount  = parseInt(localStorage.getItem("currentMatterCount") || 0);
-    let currentRPcount      = parseInt(localStorage.getItem("currentRPcount") || 0);
+
 
 
 
     // SET TOP TEXT
-    organicMatterEl.innerText        = organicMatter;
+    totalMatterEl.innerText        = totalMatter;
     
-
 
     // INIT VALUES
     let selectedMatter = "Ant Remnants";
+
+
+
+
+
+    //-------------------------------------------------------------------------------------
+    //
+    //                         FUNCTIONS
+    //
+    //-------------------------------------------------------------------------------------
+
+
+
+    let currentlyDecomposing = false;
+    let runDecompose;  // Moved to top-level scope for potential later use
+    function mainLogic(){
+
+
+        // --------------DECOMPOSE
+
+        // toggle flag if condition met
+        if(currentMatterCount >decomposeThreshold && decomposition==false){
+            decomposition = true
+            localStorage.setItem("decomposition", String(decomposition));
+            runDecompose = setInterval(decomposeDecriment, 2000);
+        }
+
+        if(decomposition==true && currentlyDecomposing==false){
+            runDecompose = setInterval(decomposeDecriment, 2000);
+            currentlyDecomposing = true
+        }
+
+
+        // ------------UNLOCK STUDY, FOCUS AND RESEARCH
+
+        if(currentRPcount>20){
+
+            showFocus     = true;
+            showStudied   = true;
+            localStorage.setItem("showFocus", String(showFocus));
+            localStorage.setItem("showStudied", String(showStudied));
+            updateVisuals(showStudied, showRP, showFocus, showDemand, showDispose, showStudy, showSell);
+
+        }
+
+        if(currentRPcount>=currentRPThreshold){
+            currentRPcount = 0;
+
+        }
+
+
+
+
+
+
+
+
+
+
+        if(showStudied==true){
+            studiedProgressEl.value   = currentStudiedVal;
+        }
+
+
+
+    }
+
+
+
+    function decomposeDecriment(){
+        console.log('decomposing decreiment');
+        if(decomposition==true && currentMatterCount>0){
+
+            // tick down currentMatterCount every
+            currentMatterCount --;
+            currentMatterCountEl.innerText   = String(currentMatterCount);
+            localStorage.setItem("currentMatterCount", String(currentMatterCount));
+         }
+    }
 
 
     function setTextElements(){
@@ -61,19 +149,52 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    function mainLogic(){
-        if(currentMatterCount>100){
-            // tick down currentMatterCount every
-        }
+    // VISUALS
+    function manageVisuals(){
+        
+        if(currentMatterCount > showRPThresh && !showRP){
+            showRP    = true
+            showStudy = true
+            localStorage.setItem("showRP", String(showRP));
+            localStorage.setItem("showStudy", String(showStudy));
+            updateVisuals(showStudied, showRP, showFocus, showDemand, showDispose, showStudy, showSell);
 
+        }
     }
 
-    // runs once 
+
+
+
+
+    //-------------------------------------------------------------------------------------
+    //
+    //                         FUNCTION EXECUTIONS 
+    //
+    //-------------------------------------------------------------------------------------
+
+
+
+
+
     
     manageVisuals();
     setTextElements();
 
+    // runs continuously 
+    let intervalID = setInterval(mainLogic, 100);
+    //clearInterval(intervalID);
 
+
+
+
+
+
+
+    //-------------------------------------------------------------------------------------
+    //
+    //                         BUTTONS
+    //
+    //-------------------------------------------------------------------------------------
 
 
 
@@ -85,20 +206,18 @@ document.addEventListener("DOMContentLoaded", function () {
     collectBtn.addEventListener("click", function () {
         
 
-        // LOGIC CHANGES
-
-        organicMatter++;
+        // UPDATE ORGANIC MATTER 
+        totalMatter++;
+        totalMatterEl.innerText        = String(totalMatter);
+        localStorage.setItem("totalMatter", String(totalMatter));
+        
+        // UPDATE ORGANIC MATTER 
         currentMatterCount++;
-
-        // UPDATING ELEMENTS
-
-        organicMatterEl.innerText        = String(organicMatter);
         currentMatterCountEl.innerText   = String(currentMatterCount);
-
-        // UPDATE LOCAL STORAGE VALUE 
-
-        localStorage.setItem("organicMatter", String(organicMatter));
         localStorage.setItem("currentMatterCount", String(currentMatterCount));
+
+
+        
 
 
         manageVisuals()
@@ -116,18 +235,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    studyBtn.addEventListener("click", function () {
-        // update values
-        currentRPcount++;
-        currentMatterCount --;
+    // ----------STUDY BUTTON 
 
-        // update display
-        currentRPEl.innerText            = String(currentRPcount);
-        currentMatterCountEl.innerText   = String(currentMatterCount);
+    studyBtn.addEventListener("click", function () {
         
-        // store
-        localStorage.setItem("currentRPcount", String(currentRPcount));
-        localStorage.setItem("currentMatterCount", String(currentMatterCount));
+        // update values
+        if(currentMatterCount>0){
+            currentRPcount++;
+            currentMatterCount --;
+
+            if(showStudied==true){
+                currentStudiedVal++;
+                localStorage.setItem("currentStudiedVal", String(currentStudiedVal));
+            }
+
+            // update display
+            currentRPEl.innerText            = String(currentRPcount);
+            currentMatterCountEl.innerText   = String(currentMatterCount);
+            
+            // store
+            localStorage.setItem("currentRPcount", String(currentRPcount));
+            localStorage.setItem("currentMatterCount", String(currentMatterCount));
+
+        }
+
 
         // Border color change logic
         this.classList.add("pressed");
@@ -141,36 +272,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     )
 
-    // VISUALS
-    function manageVisuals(){
-        
-        if(currentMatterCount > showRPThresh && !showRP){
-            showRP = true
-            showStudy = true
-            updateVisuals(showStudied, showRP, showFocus, showDemand, showDispose, showStudy, showSell);
-
-        }
-    }
 
 
-    const resetBtn = document.getElementById("resetBtn");
+    
 
     resetBtn.addEventListener("click", function () {
+
+        localStorage.clear();
         // Reset values
-        organicMatter = 2123000;
+        totalMatter = 2123000;
         currentMatterCount = 0;
 
         // Update elements
-        organicMatterEl.innerText     = organicMatter;
+        totalMatterEl.innerText        = totalMatter;
         currentMatterCountEl.innerText = currentMatterCount;
         currentRPEl.innerText          = 0;
 
         // Update localStorage
-        localStorage.setItem("organicMatter", organicMatter);
+        localStorage.setItem("totalMatter", totalMatter);
         localStorage.setItem("currentMatterCount", currentMatterCount);
         localStorage.setItem("currentRPcount", 0);
 
+
+        let showStudied  = false;   
+        let showRP       = false;
+        let showFocus    = false;
+        let showDemand   = false;
+        let showDispose  = false;
+        let showStudy    = false;
+        let showSell     = false;
+        let showRPThresh = 20
+
+
+        manageVisuals();
+        updateVisuals(showStudied, showRP, showFocus, showDemand, showDispose, showStudy, showSell);
+        setTextElements();
+        clearInterval(intervalID);
+
         alert("Values have been reset!");
+
     });
 
 
